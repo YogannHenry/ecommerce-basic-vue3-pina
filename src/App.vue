@@ -19,7 +19,7 @@
                         <ul class="flex justify-end">
                             <li class="p-2">connexion</li>
                             <li class="px-8 py-2">inscription</li>
-                            <RouterLink class="p-2 bg-red-300 hover:bg-yellow-200 rounded-lg shadow ease-out"  to="/cart">Panier ( )</RouterLink>
+                            <RouterLink class="p-2 bg-red-300 hover:bg-yellow-200 rounded-lg shadow ease-out"  to="/cart">Panier ({{data.countCartItems}})</RouterLink>
                         </ul>
                     </nav>
                 </div>
@@ -30,13 +30,12 @@
   <RouterView />
 </template>
 
-
-
-<!-- <script setup>
-    import { useProductStore } from './stores/useProductStore'
+<script setup>
+    import { useShoppingStore } from './stores'
     //get store
-    const data = useProductStore();
-</script> -->
+    const data = useShoppingStore();
+</script>
+
 
 <style scoped>
 header {
@@ -46,19 +45,5 @@ header {
   padding: 1em;
   box-shadow: 0 4px 2px -2px gray;
 }
-
-
-.subtitle{
-padding: 1em;
-font-size: 1.3em;
-font-weight: bold;
-color: rgb(245, 84, 84);
-
-}
-
-.subtitle:hover{
-  color: rgb(240, 240, 169)
-}
-
 
 </style>

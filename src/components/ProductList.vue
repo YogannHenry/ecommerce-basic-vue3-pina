@@ -1,8 +1,11 @@
 <template>
-    <div className='row my-4'>
-        <ProductListItem v-for="product in data.products" 
+   
+
+    <div className='flex flex-wrap -m-4'>
+        <ProductListItem  v-for="product in data.products" 
             :key="product.productId" :product="product" />
     </div>
+    
 </template>
 
 <script setup>

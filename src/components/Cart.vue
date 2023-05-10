@@ -31,13 +31,13 @@
                                 <td>
                                     <i 
                                         @click="data.incrementQ(item)"
-                                        class="bi bi-caret-up"></i>
+                                        class="bi bi-caret-up">+</i>
                                     <span class="mx-2">
                                         {{item.quantity}}
                                     </span>
                                     <i 
                                         @click="data.decrementQ(item)"
-                                        class="bi bi-caret-down"></i>
+                                        class="bi bi-caret-down">-</i>
                                 </td>
                                 <td>
                                     {{item.productPrice}}€
@@ -48,7 +48,7 @@
                                 <td>
                                     <i 
                                         @click="data.removeFromCart(item)"
-                                        class="bi bi-cart-x text-danger"></i>
+                                        class="bi bi-cart-x text-danger">X</i>
                                 </td>
                             </tr>
                             <tr>

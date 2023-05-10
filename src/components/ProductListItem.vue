@@ -1,18 +1,18 @@
 <template>
-    <div class="col-md-4 mb-2">
-        <div class="card">
-            <img :src="product.productPicture" class="card-img-top" alt="..." />
-            <div class="card-body">
-                <h5 class="card-title">{{product.productName}}</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button 
-                    @click="data.addToCart(product)"
-                    class="btn btn-primary">
-                    <i class="bi bi-cart-check"></i> add to cart
-                </button>
-            </div>
+    <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" :src="product.productPicture" alt="content">
+            <h3 class="tracking-widest text-red-400 text-xs font-medium title-font">{{ product.productEAN }}</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">{{ product.productName }}</h2>
+            <p class="leading-relaxed text-base">{{ product.productPrice }}€</p>
+            <button 
+                @click="data.addToCart(product)"
+                class="btn btn-primary">
+                <i class="bi bi-cart-check"></i> add to cart
+            </button>
+          </div>
         </div>
-    </div>  
+        
 </template>
 
 <script setup>
