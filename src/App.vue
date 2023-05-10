@@ -1,18 +1,42 @@
 
 <template>
-  <header>
-    
-      <nav>
-        <RouterLink class="subtitle " to="/">Home</RouterLink>
-        <RouterLink class="subtitle"  to="/about">Panier</RouterLink>
-      </nav>
-    
-  </header>
-
+    <header class=" py-4 w-screen">
+        <div class="flex justify-between px-20 bg">
+            <div class="w-1/3 flex">
+                <img src="../public/image/OIG.jpg" alt="logo">
+            </div>
+            <div class="w-120 border border-gray-300 rounded-full shadow-lg px-6 py-1 ml-3.5 ">
+                <div class="flex justify-center">
+                    <div class="p-2 ">blop</div>
+                    <RouterLink class="p-2 text-red " to="/">Home</RouterLink>
+                    <div class="px-8 py-2  border-x-rose-900">blip</div>
+                    <div class="p-2">bloup</div>
+                </div>
+            </div>
+           
+                <div class="w-1/3 px-6 py-1  ">
+                    <nav>
+                        <ul class="flex justify-end">
+                            <li class="p-2">connexion</li>
+                            <li class="px-8 py-2">inscription</li>
+                            <RouterLink class="p-2 bg-red-300 hover:bg-yellow-200 rounded-lg shadow ease-out"  to="/cart">Panier ( )</RouterLink>
+                        </ul>
+                    </nav>
+                </div>
+            
+        </div>
+    </header>
+  
   <RouterView />
 </template>
 
 
+
+<!-- <script setup>
+    import { useProductStore } from './stores/useProductStore'
+    //get store
+    const data = useProductStore();
+</script> -->
 
 <style scoped>
 header {
