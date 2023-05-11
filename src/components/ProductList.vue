@@ -1,13 +1,10 @@
 <template>
-    <div className='flex flex-wrap -m-4 bg-green-400'>
-        <ProductListBestSeller :product="data.products[0]"  />
+    
+    <div className='flex flex-wrap -m-4 '>
+        <ProductListBestSeller :product="data.products"  />
     </div>
-    <div className='flex flex-wrap -m-4 bg-blue-400'>
-        <ProductListBestSeller :product="data.products[1]"  />
-    </div>
-    <div className='flex flex-wrap -m-4 bg-green-400'>
-        <ProductListBestSeller :product="data.products[2]"  />
-    </div>
+ 
+
     <div class="container px-5 py-24 mx-auto w-screen ">
     <div class="flex flex-wrap w-full mb-20">
         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">

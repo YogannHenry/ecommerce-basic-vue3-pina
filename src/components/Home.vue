@@ -1,5 +1,5 @@
 <template>
-  <section class="text-gray-600 body-font ">
+  <main class="text-gray-600 body-font ">
     <div class="container px-5 py-24 mx-auto w-screen ">
       <div class="flex flex-wrap w-full mb-20">
         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -8,16 +8,17 @@
         </div>
         <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Nos best sellers</p>
       </div>
-
+ 
       <ProductList />
     </div>
-  </section>
+  </main>
   <Footer />
 </template>
 
 <script setup>
 import ProductList from "./ProductList.vue";
 import Footer from "./Footer.vue";
+
 </script>
 
 <style></style>

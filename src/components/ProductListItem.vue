@@ -1,5 +1,5 @@
 <template>
-    <div class="xl:w-1/4 md:w-1/2 p-4">
+    <div class="xl:w-1/4 md:w-1/2 p-4 intersection" data-color="rgb(255 255 255 )">
           <div class="bg-gray-100 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center mb-6" :src="product.productPicture" alt="content">
             <h3 class="tracking-widest text-red-400 text-xs font-medium title-font">{{ product.productEAN }}</h3>
