@@ -32,7 +32,7 @@
 
 <script setup>
     import { useShoppingStore } from './stores'
-    //get store
+  
     const data = useShoppingStore();
 </script>
 
