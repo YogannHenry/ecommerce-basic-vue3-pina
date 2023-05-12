@@ -13,7 +13,6 @@ const router = createRouter({
     {
       path: '/cart',
       name: 'cart',
-
       component: Cart
     }
   ]
