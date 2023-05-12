@@ -1,12 +1,12 @@
 <template>
     <section class="text-gray-600 body-font overflow-hidden ">
-        <div class="container px-5 py-24 mx-auto intersection ">
-            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-2xl bg-blue-400" data-color="rgb(96 165 250)">
+        <div class="container px-5 py-24 mx-auto intersection  ">
+            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl bg-cyan-400" data-color="rgb(34 211 238)">
 
-                <img alt="ecommerce" class="w-80 object-cover rounded  " :src="product[2].productPicture">
+                <img alt="ecommerce" class="w-80 object-cover rounded  " :src="product[8].productPicture">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ product[2].productEAN }}</h2>
-                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[2].productName }}</h1>
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ product[8].productEAN }}</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[8].productName }}</h1>
                     <div class="flex mb-4">
                         <span class="flex items-center">
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -88,7 +88,7 @@
             </div>
         </div>
         <div class="container px-5 py-24 mx-auto ">
-            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-2xl intersection  bg-green-400" data-color="rgb(74 222 128) ">
+            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-green-400" data-color="rgb(74 222 128) ">
 
                 <img alt="ecommerce" class="w-80 object-cover rounded  " :src="product[0].productPicture">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
@@ -175,12 +175,12 @@
             </div>
         </div>
         <div class="container px-5 py-24 mx-auto ">
-            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-2xl intersection  bg-red-400 " data-color="rgb(248 113 113)">
+            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-red-400 " data-color="rgb(248 113 113)">
 
-                <img alt="ecommerce" class="w-80 object-cover rounded  " :src="product[1].productPicture">
+                <img alt="ecommerce" class="w-80 object-cover rounded  " :src="product[6].productPicture">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ product[1].productEAN }}</h2>
-                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[1].productName }}</h1>
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ product[6].productEAN }}</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[6].productName }}</h1>
                     <div class="flex mb-4">
                         <span class="flex items-center">
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -244,8 +244,8 @@
                         modi molestias nisi debitis ratione, culpa consectetur quo saepe nihil amet repellat aliquid
                         excepturi laborum perferendis cum, esse quisquam.</p>
                     <div class="flex">
-                        <span class="title-font font-medium text-2xl text-gray-900">{{ product[1].productPrice }}€</span>
-                        <button @click="data.addToCart(product[2])"
+                        <span class="title-font font-medium text-2xl text-gray-900">{{ product[6].productPrice }}€</span>
+                        <button @click="data.addToCart(product[3])"
                             class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Ajouter
                             au panier</button>
                         <button

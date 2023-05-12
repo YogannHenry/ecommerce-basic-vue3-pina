@@ -1,7 +1,7 @@
 
 <template>
-    <header class=" py-4 w-screen">
-        <div class="flex justify-between px-20 bg">
+    <header class=" py-4 w-screen ">
+        <div class="flex justify-between px-20 bg ">
             <div class="w-1/3 flex">
                 <img src="../public/image/OIG.jpg" alt="logo">
             </div>

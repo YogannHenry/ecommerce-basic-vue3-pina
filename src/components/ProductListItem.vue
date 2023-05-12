@@ -7,8 +7,8 @@
             <p class="leading-relaxed text-base">{{ product.productPrice }}€</p>
             <button 
                 @click="data.addToCart(product)"
-                class="btn btn-primary">
-                <i class="bi bi-cart-check"></i> add to cart
+                class="p-2 bg-red-300 hover:bg-yellow-200 rounded-lg shadow ease-out">
+                <i></i> add to cart
             </button>
           </div>
         </div>
