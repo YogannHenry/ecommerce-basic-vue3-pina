@@ -1,5 +1,5 @@
 <template>
-  <main class="text-gray-600 body-font  ">
+  <main  class="text-gray-600 body-font  ">
     <div class="container px-5 py-24 mx-auto w-screen  ">
       <div class="flex flex-wrap w-full mb-20 ">
         <div class=" w-full mb-6 lg:mb-0 ">
@@ -20,5 +20,12 @@ import ProductList from "./ProductList.vue";
 import Footer from "./Footer.vue";
 
 </script>
+<script>
+import intersectionCss from '../intersection.js';
 
-<style></style>
+export default {
+  mounted() {
+    intersectionCss.observeImages();
+  }
+}
+</script>

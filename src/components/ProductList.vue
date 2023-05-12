@@ -27,6 +27,7 @@ import ProductListItem from './ProductListItem.vue'
 import ProductListBestSeller from './ProductListBestSeller.vue'
 import { useShoppingStore } from '../stores'
 
+
 //récupérer les produits du JSON depuis le store
 const data = useShoppingStore();
 </script>
