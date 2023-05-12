@@ -1,0 +1,17 @@
+.intersection {
+    transition: 0.3s;
+    
+   
+    opacity: 1;
+  }
+  
+  .animate {
+    opacity: 1;
+  }
+  
+  
+  
+  main{
+    background-color: rgb(34 211 238) ;
+    transition: 0.3s
+  }
