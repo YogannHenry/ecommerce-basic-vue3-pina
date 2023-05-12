@@ -3,14 +3,16 @@
     <header class=" py-4 w-screen ">
         <div class="flex justify-between px-20 bg ">
             <div class="w-1/3 flex">
-                <img src="../public/image/OIG.jpg" alt="logo">
-            </div>
+  <a href="https://yogannhenry.github.io/" target="_blank">
+    <img class="h-14" src="../public/image/pngegg.png" alt="logo">
+  </a>
+</div>
             <div class="w-120 border border-gray-300 rounded-full shadow-lg px-6 py-1 ml-3.5 ">
                 <div class="flex justify-center">
-                    <div class="p-2 ">blop</div>
                     <RouterLink class="p-2 text-red " to="/">Home</RouterLink>
-                    <div class="px-8 py-2  border-x-rose-900">blip</div>
-                    <div class="p-2">bloup</div>
+                    <div class="p-2 ">A propos</div>
+                    <a href="https://yogannhenry.github.io/" target="_blank"><div class="px-8 py-2  border-x-rose-900">Contact</div></a>
+                    <div class="p-2">Mes favoris</div>
                 </div>
             </div>
            
