@@ -1,54 +1,54 @@
 <template>
     <section class="text-gray-600 body-font overflow-hidden ">
-        <div class="container px-5 py-24 mx-auto intersection  ">
-            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl bg-cyan-400" data-color="rgb(34 211 238)">
+        <div class="container px-5 py-24 mx-auto intersection mb-20  ">
+            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl bg-c1" data-color="rgb(184 61 52 )">
 
-                <img alt="ecommerce" class="w-80 object-cover rounded  " :src="product[8].productPicture">
+                <img alt="ecommerce" class="w-80 object-cover rounded p-5 " :src="product[8].productPicture">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ product[8].productEAN }}</h2>
+                    <h2 class="text-sm title-font text-slate-50 tracking-widest">{{ product[8].productEAN }}</h2>
                     <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[8].productName }}</h1>
                     <div class="flex mb-4">
                         <span class="flex items-center">
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
-                            <span class="text-gray-600 ml-3">4 Reviews</span>
+                            <span class="text-slate-50 ml-3">4 Reviews</span>
                         </span>
                         <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
-                            <a class="text-gray-500">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                                 </svg>
                             </a>
-                            <a class="text-gray-500">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -56,7 +56,7 @@
                                     </path>
                                 </svg>
                             </a>
-                            <a class="text-gray-500">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -66,16 +66,16 @@
                             </a>
                         </span>
                     </div>
-                    <p class="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium fuga vel
+                    <p class="leading-relaxed text-slate-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium fuga vel
                         modi molestias nisi debitis ratione, culpa consectetur quo saepe nihil amet repellat aliquid
                         excepturi laborum perferendis cum, esse quisquam.</p>
-                    <div class="flex">
+                    <div class="flex py-4">
                         <span class="title-font font-medium text-2xl text-gray-900">{{ product[2].productPrice }}€</span>
                         <button @click="data.addToCart(product[2])"
-                            class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Ajouter
+                            class="flex ml-auto text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded">Ajouter
                             au panier</button>
                         <button
-                            class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+                            class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-slate-50 ml-4 hover:bg-red-400">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 class="w-5 h-5" viewBox="0 0 24 24">
                                 <path
@@ -87,55 +87,55 @@
                 </div>
             </div>
         </div>
-        <div class="container px-5 py-24 mx-auto ">
-            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-green-400" data-color="rgb(74 222 128) ">
+        <div class="container px-5 py-24 mx-auto mb-20">
+            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-c2" data-color="rgb(57 108 114) ">
 
-                <img alt="ecommerce" class="w-80 object-cover rounded  " :src="product[0].productPicture">
+                <img alt="ecommerce" class="w-80 object-cover rounded  p-5" :src="product[0].productPicture">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ product[0].productEAN }}</h2>
+                    <h2 class="text-sm title-font text-slate-50 tracking-widest">{{ product[0].productEAN }}</h2>
                     <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[0].productName }}</h1>
                     <div class="flex mb-4">
                         <span class="flex items-center">
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
-                            <span class="text-gray-600 ml-3">4 Reviews</span>
+                            <span class="text-slate-50 ml-3">4 Reviews</span>
                         </span>
                         <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
-                            <a class="text-gray-500">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                                 </svg>
                             </a>
-                            <a class="text-gray-500">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -143,7 +143,7 @@
                                     </path>
                                 </svg>
                             </a>
-                            <a class="text-gray-500">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -153,16 +153,16 @@
                             </a>
                         </span>
                     </div>
-                    <p class="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium fuga vel
+                    <p class="leading-relaxed text-slate-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium fuga vel
                         modi molestias nisi debitis ratione, culpa consectetur quo saepe nihil amet repellat aliquid
                         excepturi laborum perferendis cum, esse quisquam.</p>
-                    <div class="flex">
+                    <div class="flex py-4">
                         <span class="title-font font-medium text-2xl text-gray-900">{{ product[0].productPrice }}€</span>
-                        <button @click="data.addToCart(product[2])"
-                            class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Ajouter
+                        <button @click="data.addToCart(product[0])"
+                            class="flex ml-auto text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded">Ajouter
                             au panier</button>
                         <button
-                            class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+                            class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-slate-50 ml-4  hover:bg-red-400">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 class="w-5 h-5" viewBox="0 0 24 24">
                                 <path
@@ -174,55 +174,55 @@
                 </div>
             </div>
         </div>
-        <div class="container px-5 py-24 mx-auto ">
-            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-red-400 " data-color="rgb(248 113 113)">
+        <div class="container px-5 py-24 mx-auto mb-20">
+            <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-c3 " data-color="rgb(167 194 216)">
 
-                <img alt="ecommerce" class="w-80 object-cover rounded  " :src="product[6].productPicture">
+                <img alt="ecommerce" class="w-80 object-cover rounded p-5 " :src="product[6].productPicture">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-gray-500 tracking-widest">{{ product[6].productEAN }}</h2>
+                    <h2 class="text-sm title-font text-slate-50 tracking-widest">{{ product[6].productEAN }}</h2>
                     <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[6].productName }}</h1>
                     <div class="flex mb-4">
                         <span class="flex items-center">
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 text-indigo-500" viewBox="0 0 24 24">
+                                stroke-width="2" class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24">
                                 <path
                                     d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
                                 </path>
                             </svg>
-                            <span class="text-gray-600 ml-3">4 Reviews</span>
+                            <span class="text-slate-50 ml-3">4 Reviews</span>
                         </span>
-                        <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
-                            <a class="text-gray-500">
+                        <span class="flex ml-3 pl-3 py-2 border-l-2 border-slate-200 space-x-2s">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                                 </svg>
                             </a>
-                            <a class="text-gray-500">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -230,7 +230,7 @@
                                     </path>
                                 </svg>
                             </a>
-                            <a class="text-gray-500">
+                            <a class="text-slate-50">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5" viewBox="0 0 24 24">
                                     <path
@@ -240,16 +240,16 @@
                             </a>
                         </span>
                     </div>
-                    <p class="leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium fuga vel
+                    <p class="leading-relaxed text-slate-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium fuga vel
                         modi molestias nisi debitis ratione, culpa consectetur quo saepe nihil amet repellat aliquid
                         excepturi laborum perferendis cum, esse quisquam.</p>
-                    <div class="flex">
+                    <div class="flex py-4">
                         <span class="title-font font-medium text-2xl text-gray-900">{{ product[6].productPrice }}€</span>
-                        <button @click="data.addToCart(product[3])"
-                            class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Ajouter
+                        <button @click="data.addToCart(product[6])"
+                            class="flex ml-auto text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded">Ajouter
                             au panier</button>
                         <button
-                            class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+                            class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-slate-50 ml-4 hover:bg-red-500">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 class="w-5 h-5" viewBox="0 0 24 24">
                                 <path

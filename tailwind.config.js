@@ -4,13 +4,23 @@ module.exports = {
    darkMode: 'media', // or 'media' or 'class'
    theme: {
      extend: {
+
       boxShadow: {
       '3xl': '0 40px 100px rgba(0, 0, 0, 0.4)',
-      }
+      },
+
+      colors: {
+        'c1': '#B83D34',
+        'c2': '#396C72',
+        'c3': '#A7C2D8',
+      
      },
+
    },
+
    variants: {
      extend: {},
    },
    plugins: [],
  }
+}
