@@ -70,8 +70,8 @@
                         modi molestias nisi debitis ratione, culpa consectetur quo saepe nihil amet repellat aliquid
                         excepturi laborum perferendis cum, esse quisquam.</p>
                     <div class="flex py-4">
-                        <span class="title-font font-medium text-2xl text-gray-900">{{ product[2].productPrice }}€</span>
-                        <button @click="data.addToCart(product[2])"
+                        <span class="title-font font-medium text-2xl text-gray-900">{{ product[8].productPrice }}€</span>
+                        <button @click="data.addToCart(product[8])"
                             class="flex ml-auto text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded">Ajouter
                             au panier</button>
                         <button

@@ -1,5 +1,5 @@
 <template>
-     <header class=" py-4 w-screen  text-gray-600 body-font fixed bg-slate-50">
+     <header class=" py-4 w-screen  text-gray-600 body-font xl:fixed bg-slate-50">
         <div class="container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center">
             <div class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 mr-16">
                 <a href="https://yogannhenry.github.io/" target="_blank">

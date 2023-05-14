@@ -16,6 +16,10 @@ module.exports = {
       
      },
 
+     height: {
+      '101' : '38rem'
+     }
+
    },
 
    variants: {
