@@ -1,6 +1,6 @@
 <template>
     <section class="text-gray-600 body-font overflow-hidden ">
-        <div class="container px-5 py-24 mx-auto intersection mb-20  ">
+        <div class="container px-5 py-24 mx-auto intersection mb-32 ">
             <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl bg-c1" data-color="rgb(184 61 52 )">
 
                 <img alt="ecommerce" class="w-80 object-cover rounded p-5 " :src="product[8].productPicture">
@@ -75,6 +75,7 @@
                             class="flex ml-auto text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded">Ajouter
                             au panier</button>
                         <button
+                        @click="favoris.addToFavoris(item[8])" 
                             class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-slate-50 ml-4 hover:bg-red-400">
                             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 class="w-5 h-5" viewBox="0 0 24 24">
@@ -87,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="container px-5 py-24 mx-auto mb-20">
+        <div class="container px-5 py-24 mx-auto mb-32">
             <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-c2" data-color="rgb(57 108 114) ">
 
                 <img alt="ecommerce" class="w-80 object-cover rounded  p-5" :src="product[0].productPicture">
@@ -267,14 +268,21 @@
 
 <script setup>
 import { useShoppingStore } from '../stores'
+import { favorisStore } from '../stores/favoris'
 //get props
 const props = defineProps({
     product: {
         type: Array,
         required: true
-    }
+    },
 
+item: {
+    type: Array,
+        required: true
+}
 });
+
 //get store
 const data = useShoppingStore();
+const favoris = favorisStore();
 </script>

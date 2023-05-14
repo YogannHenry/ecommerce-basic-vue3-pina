@@ -7,22 +7,22 @@
                 </a>
                 <span class="ml-3 text-xl">Drink is so goood</span>
             </div>
-            <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center  md:border border-gray-300 rounded-full shadow-lg p-1 px-2 ">
+            <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center  md:border border-gray-300 rounded-full shadow-lg p-1 px-2 hover:shadow-xl ">
                 <div class="flex justify-center">
                     <RouterLink class="p-2 text-red " to="/">Home</RouterLink>
                     <div class="p-2 ">A propos</div>
                     <a href="https://yogannhenry.github.io/contact.html" target="_blank">
                         <div class="px-8 py-2  border-x-rose-900">Contact</div>
                     </a>
-                    <div class="p-2">Mes favoris</div>
+                    <RouterLink to="/favoris" class="p-2">Mes favoris</RouterLink>
                 </div>
             </div>
 
             <div class="mt-4 md:mt-0">
                 <nav>
                     <ul class="flex justify-end">
-                        <li class="p-2">connexion</li>
-                        <li class="px-8 py-2">inscription</li>
+                        <li class="p-2 hover:bg-slate-200 rounded-lg">Connexion</li>
+                        <li class="mx-3 py-2  hover:bg-slate-200 rounded-lg">Inscription</li>
                         <RouterLink class="p-2 bg-red-300 hover:bg-red-400 rounded-lg shadow ease-out text-black" to="/cart">Panier
                             ({{ data.countCartItems }})</RouterLink>
                     </ul>
