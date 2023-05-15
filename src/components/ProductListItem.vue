@@ -9,7 +9,7 @@
             <h2 class="text-lg text-gray-900 font-medium title-font">{{ product.productName }}</h2>
             <p class="leading-relaxed text-base">{{ product.productPrice }}€</p>
             <button @click="data.addToCart(product)" class="p-2 bg-red-300 hover:bg-red-400 rounded-lg shadow ease-out mb-4">
-                <i></i> add to cart
+                <i></i> Ajouter au panier
             </button>
 
         </div>

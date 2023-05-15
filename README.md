@@ -1,29 +1,25 @@
-# perfusion
+# Website Template
 
-This template should help get you started developing with Vue 3 in Vite.
+Ecommerce template with Vue3 JS
 
-## Recommended IDE Setup
+## Framework
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Framework used
+- Vue3 Js
+- Tailwind 
+- Vite
+- SweetAlert2
+- Pinia
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
+### Launch app
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Goal
 
-```sh
-npm run build
-```
+Insert a JSON file and use the data
+Manage a Cart with Pinia
