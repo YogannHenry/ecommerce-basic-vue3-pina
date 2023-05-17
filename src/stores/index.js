@@ -25,7 +25,7 @@ export const useShoppingStore = defineStore('shopping', {
               Swal.fire({
                 position: 'top-end',
                 icon: 'success',
-                title: 'Your item has been updated',
+                title: 'Votre produit à été ajouté au panier',
                 showConfirmButton: false,
                 timer: 1500
               });
@@ -35,7 +35,7 @@ export const useShoppingStore = defineStore('shopping', {
               Swal.fire({
                 position: 'top-end',
                 icon: 'success',
-                title: 'Your item has been saved',
+                title: 'Votre produit à été ajouté au panier',
                 showConfirmButton: false,
                 timer: 1500
               });
@@ -48,7 +48,7 @@ export const useShoppingStore = defineStore('shopping', {
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
-                    title: 'Your item has been updated',
+                    title: 'La quantitée a été mise à jour',
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -64,7 +64,7 @@ export const useShoppingStore = defineStore('shopping', {
                 Swal.fire({
                     position: 'top-end',
                     icon: 'success',
-                    title: 'Your item has been updated',
+                    title: 'La quantitée a été mise à jour',
                     showConfirmButton: false,
                     timer: 1500
                 });
@@ -75,7 +75,7 @@ export const useShoppingStore = defineStore('shopping', {
             Swal.fire({
               position: 'top-end',
               icon: 'success',
-              title: 'Your item has been removed',
+              title: 'Le produit a été retiré du panier',
               showConfirmButton: false,
               timer: 1500
             });

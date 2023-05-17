@@ -267,7 +267,7 @@
 </template>
 
 <script setup>
-import { useShoppingStore } from '../stores'
+import { useShoppingStore } from '../stores/index'
 import { favorisStore } from '../stores/favoris'
 //get props
 const props = defineProps({

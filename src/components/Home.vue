@@ -21,7 +21,9 @@
 import ProductList from "./ProductList.vue";
 import Footer from "./Footer.vue";
 
+
 </script>
+
 <script>
 import intersectionCss from '../intersection.js';
 

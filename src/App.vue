@@ -6,8 +6,6 @@
 
 <script setup>
 import Header from "./components/Header.vue";
-import { useShoppingStore } from './stores'
-const data = useShoppingStore();
 </script>
 
 

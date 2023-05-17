@@ -11,7 +11,7 @@ export default {
         }
       });
     }, {
-      threshold: 0.5
+      threshold: 0.7
     });
 
     images.forEach(function(el, i) {
