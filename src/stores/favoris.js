@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import productData from '../products.json'
 
-export const favorisStore = defineStore('shopping', {
+export const favorisStore = defineStore('favoris', {
     state: () => {
         return { 
             item: productData,
