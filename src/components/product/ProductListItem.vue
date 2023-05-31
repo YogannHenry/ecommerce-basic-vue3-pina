@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import { useShoppingStore } from '../stores'
+import { useShoppingStore } from '../../stores'
 
 //get props
 const props = defineProps({

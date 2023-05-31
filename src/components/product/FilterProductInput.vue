@@ -1,4 +1,13 @@
 <template>
+
+<div id="catalogue" class="container px-5 py-24 mx-auto w-screen ">
+      <div class=" w-full mb-6 lg:mb-0 ">
+          <h1  class="sm:text-5xl text-3xl font-black title-font mb-2 text-center text-gray-900 mt-20">Notre catalogue </h1>
+          <p class=" w-full leading-relaxed text-3xl font-black text-gray-700 text-center">Il est temps de vous faire plaisir</p>      
+        </div>
+      </div>   
+
+
   <!-- -------------------------------------------------------------------- -->
   <!------------------------------- block input ------------------------------>
   <!-- -------------------------------------------------------------------- -->
@@ -27,7 +36,7 @@
 <script setup>
 import { ref, computed} from 'vue'
 import ProductListItem from './ProductListItem.vue'
-import { useShoppingStore } from '../stores'
+import { useShoppingStore } from '../../stores'
 
 // <!-- -------------------------------------------------------------------- -->
 //     <!------------------------------- appel du JSON ------------------------------>
