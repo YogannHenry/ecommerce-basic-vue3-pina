@@ -13,18 +13,10 @@
       </div>     
 
       <FilterProductInput/>
-
-  
-
-    <!-- <div className='flex flex-wrap -m-4'>      
-        <ProductListItem  v-for="product in data.products" 
-            :key="product.productId" :product="product" />
-    </div> -->
     
 </template>
 
 <script setup>
-import ProductListItem from './ProductListItem.vue'
 import ProductListBestSeller from './ProductListBestSeller.vue'
 import FilterProductInput from './FilterProductInput.vue';
 import { useShoppingStore } from '../stores'
@@ -34,5 +26,3 @@ import { useShoppingStore } from '../stores'
 const data = useShoppingStore();
 </script>
 
-<style>
-</style>
