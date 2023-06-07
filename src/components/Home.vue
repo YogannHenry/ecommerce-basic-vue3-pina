@@ -1,6 +1,6 @@
 <template>
 
-  <Header />
+
 
   <main class="text-gray-600 body-font  ">
     <div class="container px-5 py-24 mx-auto w-screen ">
@@ -18,16 +18,13 @@
     </div>
   </main>
 
-  <Footer />
+  
 
 </template>
 
 <script setup>
 
 import ProductList from "./product/ProductList.vue";
-import Footer from "./partials/Footer.vue";
-import Header from "./partials/Header.vue";
-
 
 
 </script>
@@ -51,12 +48,3 @@ export default {
 }
 </script>
 
-<style scoped>
-header {
-    line-height: 1.5;
-    max-height: 100vh;
-    text-align: center;
-    padding: 1em;
-    box-shadow: 0 4px 2px -2px gray;
-}
-</style>

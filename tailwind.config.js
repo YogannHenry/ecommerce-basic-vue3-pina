@@ -18,6 +18,11 @@ module.exports = {
 
      height: {
       '101' : '38rem'
+     },
+
+     width: {
+      'formWidth' : '50rem'
+
      }
 
    },

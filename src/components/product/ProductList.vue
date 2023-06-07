@@ -8,12 +8,14 @@
 
       <FilterProductInput/>
     
+    
 </template>
 
 <script setup>
 import ProductListBestSeller from './ProductListBestSeller.vue'
 import FilterProductInput from './FilterProductInput.vue';
 import { useShoppingStore } from '../../stores'
+
 
 
 //récupérer les produits du JSON depuis le store
