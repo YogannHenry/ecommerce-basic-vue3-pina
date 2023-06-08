@@ -3,7 +3,7 @@
         <div class="container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center">
             <div class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 mr-16">
                 <a href="https://yogannhenry.github.io/" target="_blank">
-                    <img class="h-14" src="../../public/image/pngegg.png" alt="logo">
+                    <img class="h-14" src="../../../public/image/pngegg.png" alt="logo">
                 </a>
                 <span class="ml-3 text-xl">Drink is so goood</span>
             </div>
