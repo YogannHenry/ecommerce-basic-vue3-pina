@@ -3,6 +3,7 @@ import Home from '../components/Home.vue'
 import Cart from '../components/Cart.vue'
 import Favoris from '../components/favoris/Favoris.vue'
 import productDetail from '../components/product/productDetail.vue'
+import ContactForm from '../components/ContactForm/ContactForm.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,12 @@ const router = createRouter({
       path: '/productDetail/:id',
       name: 'product',
       component: productDetail
+    },
+
+    {
+      path: '/ContactForm',
+      name: 'ContactForm',
+      component: ContactForm
     }
   ]
 })

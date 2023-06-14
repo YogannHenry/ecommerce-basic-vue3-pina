@@ -12,9 +12,8 @@
                 <div class="flex justify-center">
                     <RouterLink class="p-2 text-red " to="/">Home</RouterLink>
                     <div class="p-2 ">A propos</div>
-                    <a href="https://yogannhenry.github.io/contact.html" target="_blank">
-                        <div class="px-8 py-2  border-x-rose-900">Contact</div>
-                    </a>
+                    <RouterLink to="/ContactForm" class="p-2">Contact</RouterLink>
+                 
                     <RouterLink to="/favoris" class="p-2">Mes favoris</RouterLink>
                 </div>
             </div>
@@ -47,12 +46,4 @@ const buttons = [
 
 </script>
 
-<style scoped>
-header {
-    line-height: 1.5;
-    max-height: 100vh;
-    text-align: center;
-    padding: 1em;
-    box-shadow: 0 4px 2px -2px gray;
-}
-</style>
+

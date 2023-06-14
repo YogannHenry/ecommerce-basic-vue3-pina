@@ -33,9 +33,7 @@ import ProductList from "./product/ProductList.vue";
 import intersectionCss from '../intersection.js';
 
 export default {
-  mounted() {
-    intersectionCss.observeImages();
-  },
+
 
   methods: {
     scrollToCatalogue() {
@@ -44,7 +42,10 @@ export default {
         catalogueElement.scrollIntoView({ behavior: 'smooth', inline: "nearest" });
       }
     }
-  }
+  },
+     mounted() {
+    intersectionCss.observeImages();
+  },
 }
 </script>
 

@@ -13,8 +13,8 @@
                     }}</h1>
                     <cardTemplateSvgStuff />
                     <div class="flex py-4">
-                        <span class="title-font font-medium text-2xl text-gray-900">{{ product[0].productPrice }}€</span>
-                        <button @click="data.addToCart(product[0])"
+                        <span class="title-font font-medium text-2xl text-gray-900">{{ productFilterBestSeller[0].productPrice }}€</span>
+                        <button @click="data.addToCart(productFilterBestSeller[0])"
                             class="flex ml-auto text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded">Ajouter
                             au panier</button>
                         <button @click="favoris.addToFavoris(item[8])"
@@ -34,14 +34,14 @@
             <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-c2"
                 data-color="rgb(57 108 114) ">
 
-                <img alt="ecommerce" class="w-80 object-cover rounded  p-5" :src="product[1].productPicture">
+                <img alt="ecommerce" class="w-80 object-cover rounded  p-5" :src="productFilterBestSeller[1].productPicture">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-slate-50 tracking-widest">{{ product[1].productEAN }}</h2>
-                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[1].productName }}</h1>
+                    <h2 class="text-sm title-font text-slate-50 tracking-widest">{{ productFilterBestSeller[1].productEAN }}</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ productFilterBestSeller[1].productName }}</h1>
                     <cardTemplateSvgStuff />
                     <div class="flex py-4">
-                        <span class="title-font font-medium text-2xl text-gray-900">{{ product[1].productPrice }}€</span>
-                        <button @click="data.addToCart(product[1])"
+                        <span class="title-font font-medium text-2xl text-gray-900">{{ productFilterBestSeller[1].productPrice }}€</span>
+                        <button @click="data.addToCart(productFilterBestSeller[1])"
                             class="flex ml-auto text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded">Ajouter
                             au panier</button>
                         <button
@@ -61,14 +61,14 @@
             <div class="lg:w-4/5 mx-auto flex flex-wrap justify-evenly  rounded-lg shadow-3xl intersection  bg-c3 "
                 data-color="rgb(167 194 216)">
 
-                <img alt="ecommerce" class="w-80 object-cover rounded p-5 " :src="product[2].productPicture">
+                <img alt="ecommerce" class="w-80 object-cover rounded p-5 " :src="productFilterBestSeller[2].productPicture">
                 <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-slate-50 tracking-widest">{{ product[2].productEAN }}</h2>
-                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ product[2].productName }}</h1>
+                    <h2 class="text-sm title-font text-slate-50 tracking-widest">{{ productFilterBestSeller[2].productEAN }}</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{{ productFilterBestSeller[2].productName }}</h1>
                     <cardTemplateSvgStuff />
                     <div class="flex py-4">
-                        <span class="title-font font-medium text-2xl text-gray-900">{{ product[2].productPrice }}€</span>
-                        <button @click="data.addToCart(product[2])"
+                        <span class="title-font font-medium text-2xl text-gray-900">{{ productFilterBestSeller[2].productPrice }}€</span>
+                        <button @click="data.addToCart(productFilterBestSeller[2])"
                             class="flex ml-auto text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded">Ajouter
                             au panier</button>
                         <button

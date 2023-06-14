@@ -94,7 +94,7 @@ const rules = reactive<FormRules>({
 })
 
 //------------------------------------------------------------------------------------------------------------------------
-//-------------------------on créer une constance avec la method reactive, car ses propriété sont voués à être modifié régulièrement ------
+//-------------------------on créer une varialbe avec la method reactive, car ses propriété sont voués à être modifié régulièrement ------
 //----------------------------------------------------------------------------------------------------------------------------
 
 const reviews = reactive([])
