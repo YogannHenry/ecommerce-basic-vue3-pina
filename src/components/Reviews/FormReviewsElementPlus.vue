@@ -1,40 +1,5 @@
 <template>
-  <el-form 
-  submit.prevent="onSubmit" 
-  ref="ruleFormRef" 
-  :model="ruleForm" 
-  :rules="rules" 
-  label-width="120px" 
-  class=" m-20"
-  :size="formSize" 
-  status-icon>
-
-    <el-form-item class="w-96" label="Pseudo" prop="name">
-      <el-input v-model="ruleForm.name" />
-    </el-form-item>
-
-    <el-form-item class="w-60" label="Note" prop="region">
-      <el-select v-model="ruleForm.note" placeholder="note">
-        <el-option label="1 étoile" value="1" />
-        <el-option label="2 étoiles" value="2" />
-        <el-option label="3 étoiles" value="3" />
-        <el-option label="4 étoiles" value="4" />
-        <el-option label="5 étoiles" value="5" />
-      </el-select>
-    </el-form-item>
-
-    <el-form-item class="w-formWidth" label="Commentaire" prop="desc">
-      <el-input v-model="ruleForm.desc" type="textarea" />
-    </el-form-item>
-
-    <el-form-item>
-      <el-button class="bg-c2" type="primary" @click="submitForm(ruleFormRef)">
-        Confirmer
-      </el-button>
-      <el-button @click="resetForm(ruleFormRef)">Annuler</el-button>
-    </el-form-item>
-  </el-form>
-
+  
 
   <div>
     <h3> Reviews:</h3>
@@ -43,9 +8,9 @@
         <el-card class="box-card">
           <template #header>
             <div class="card-header flex justify-between">
-              <p class="bg-c2 w-10 ">{{ review.name }}</p>
+              <p class="bg-c2 w-10 ">{{ review.attributes.name }}</p>
               <div class="flex items-center">
-              <div class="" text>{{ review.note }} 
+              <div class="" text>{{ review.attributes.note }} 
               </div>
                 <svg class=" w-5" viewBox="0 0 1024 1024"
                   xmlns="http://www.w3.org/2000/svg" data-v-ea893728="">
@@ -56,7 +21,7 @@
               </div>
             </div>
           </template>
-          <p>{{ review.desc }}</p>
+          <p>{{ review.attributes.desc }}</p>
         </el-card>
 
       </li>
@@ -65,8 +30,19 @@
 </template>
   
 <script lang="ts" setup>
-import { reactive, ref } from 'vue'
+import { reactive, ref, onMounted } from 'vue'
 import type { FormInstance, FormRules } from 'element-plus'
+
+
+
+
+
+
+//------------------------------------------------------------------------------------------------------------------------
+//-------------------------definition des paramètre des input------
+//----------------------------------------------------------------------------------------------------------------------------
+
+
 
 const formSize = ref('default')
 const ruleFormRef = ref<FormInstance>()
@@ -75,6 +51,14 @@ const ruleForm = reactive({
   note: '',
   desc: '',
 })
+
+
+//------------------------------------------------------------------------------------------------------------------------
+//-------------------------regle pour valider chaque input------
+//----------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 const rules = reactive<FormRules>({
   name: [
@@ -93,30 +77,33 @@ const rules = reactive<FormRules>({
   ],
 })
 
+
+
+
+
 //------------------------------------------------------------------------------------------------------------------------
 //-------------------------on créer une varialbe avec la method reactive, car ses propriété sont voués à être modifié régulièrement ------
 //----------------------------------------------------------------------------------------------------------------------------
 
-const reviews = reactive([])
+// const reviews = reactive([])
 
-const submitForm = async (formEl: FormInstance | undefined) => {
-  if (!formEl) return
-  await formEl.validate((valid, fields) => {
-    if (valid) {
-      console.log('submit!')
+// const submitForm = async (formEl: FormInstance | undefined) => {
+//   if (!formEl) return
+//   await formEl.validate((valid, fields) => {
+//     if (valid) {
+//       console.log('submit!')
 
-      //------------------------------------------------------------------------------------------------------------------------
-      //-------------------------On utilise le Spread Operator pour créer un nouvelle objet qui aura les mêmes valeurs que ruleForm, sans cela les review.name reviews.note prenaient les nouvelles valeurs a chaque submit. grace au spread on peut conserver chauque valeur-------
-      //----------------------------------------------------------------------------------------------------------------------------
-      const review = { ...ruleForm }
-      reviews.push(review)
-      console.log("reviews", reviews)
+//       //------------------------------------------------------------------------------------------------------------------------
+//       //-------------------------On utilise le Spread Operator pour créer un nouvelle objet qui aura les mêmes valeurs que ruleForm, sans cela les review.name reviews.note prenaient les nouvelles valeurs a chaque submit. grace au spread on peut conserver chauque valeur-------
+//       //----------------------------------------------------------------------------------------------------------------------------
+//       const review = { ...ruleForm }
+//       reviews.push(review)
 
-    } else {
-      console.log('error submit!', fields)
-    }
-  })
-}
+//     } else {
+//       console.log('error submit!', fields)
+//     }
+//   })
+// }
 
 const resetForm = (formEl: FormInstance | undefined) => {
   if (!formEl) return

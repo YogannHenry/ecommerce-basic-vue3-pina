@@ -1,8 +1,8 @@
 <template>
     
-    <div className='flex flex-wrap -m-4 '>
+    <!-- <div className='flex flex-wrap -m-4 '>
         <ProductListBestSeller/>
-    </div>
+    </div> -->
 
     <FilterProductInput/>
     
