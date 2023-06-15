@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import Swal from "sweetalert2";
-import { getProducts, getReviews } from "../../API/api.js";
+import { createReviews, getProducts, getReviews } from "../API/api";
 
 export const useShoppingStore = defineStore("shopping", {
   state: () => {
@@ -42,11 +42,20 @@ export const useShoppingStore = defineStore("shopping", {
             const reviews = await getReviews();            
             this.reviews = reviews.data.data;
           } catch (error) {
-            console.error("error", error);
+            console.error("errorloadReviews", error);
             throw error;
           }
         },
-    
+        
+    async pushReviews(data) {
+        try {
+            const reviews = await createReviews(data);            
+            this.reviews = reviews.data.data;
+          } catch (error) {
+            console.error("errorpushReviews", error);
+            throw error;
+          }
+        },
 
 
     productFilter(paramètre) {
