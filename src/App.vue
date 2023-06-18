@@ -15,14 +15,12 @@ import { useShoppingStore } from './stores'
 const store = useShoppingStore();
 
     onMounted(async () => {
-      await store.loadProducts()
-    
-    })
-
-    onMounted(async () => {
+      await store.loadProducts();
       await store.loadReviews()
     
     })
+
+
 
 
 </script>
