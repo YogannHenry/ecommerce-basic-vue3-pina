@@ -1,13 +1,15 @@
 import { defineStore } from "pinia";
 import Swal from "sweetalert2";
-import { createReviews, getProducts, getReviews } from "../API/api";
+import { getProducts, getReviews } from "../API/api";
 
 export const useShoppingStore = defineStore("shopping", {
   state: () => {
     return {
       products: [],
       cartItems: [],
-      reviews: []
+      ProductsReviews: [],
+      ProductReview: [],
+      InputFilterProduct: ""
     };
   },
   getters: {
@@ -17,71 +19,57 @@ export const useShoppingStore = defineStore("shopping", {
     getCartItems() {
       return this.cartItems;
     },
-  },
-  getProductById() {
-    return this.$route.params.id;
+    getProductById(state) {
+      return (productId) =>
+        state.products.find((product) => product.id === productId);
+    }
   },
 
   actions: {
     async loadProducts() {
       try {
-        const products = await getProducts();        
+        const params = {};
+    
+        if (this.InputFilterProduct === "prix-croissant") {
+          params.sort = "productPrice:asc";
+        } else if (this.InputFilterProduct === "prix-décroissant") {
+          params.sort = "productPrice:desc";
+        } else if (this.InputFilterProduct) {
+          params.sort = this.InputFilterProduct;
+        }
+    
+        const products = await getProducts(params);
         this.products = products.data.data;
       } catch (error) {
-        console.error("error", error);
+        console.error("loadError", error);
         throw error;
       }
     },
 
-    loadProductById(productId) {
-      return products.find((product) => product.id === this.productId);
-    },
 
     async loadReviews() {
-        try {
-            const reviews = await getReviews();            
-            this.reviews = reviews.data.data;
-          } catch (error) {
-            console.error("errorloadReviews", error);
-            throw error;
-          }
-        },
-        
-    async pushReviews(data) {
-        try {
-            const reviews = await createReviews(data);            
-            this.reviews = reviews.data.data;
-          } catch (error) {
-            console.error("errorpushReviews", error);
-            throw error;
-          }
-        },
-
-
-    productFilter(paramètre) {
-      if (paramètre == "prix-croissant") {
-        return this.products.sort(
-          (minPrice, maxPrice) =>
-            minPrice.attributes.productPrice - maxPrice.attributes.productPrice
-        );
-      } else {
-        if (paramètre == "prix-décroissant") {
-          return this.products.sort(
-            (minPrice, maxPrice) =>
-              maxPrice.attributes.productPrice -
-              minPrice.attributes.productPrice
-          );
-        } else {
-          if (paramètre) {
-            return this.products.filter(
-              (product) => product.attributes.category === paramètre
-            );
-          } else {
-            return this.products;
-          }
-        }
+      try {
+        const reviews = await getReviews();
+        this.reviews = reviews.data.data;
+      } catch (error) {
+        console.error("errorloadReviews", error);
+        throw error;
       }
     },
+
+    async pushReviews(reviewData) {
+
+      try {
+        const reviews = await createReviews(reviewData);
+        this.reviews = reviews.data.data;
+      } catch (error) {
+        console.error("errorpushReviews", error);
+        throw error;
+      }
+    },
+
+
+
 
     addToCart(item) {
       let index = this.cartItems.findIndex(
@@ -155,5 +143,8 @@ export const useShoppingStore = defineStore("shopping", {
         timer: 1500,
       });
     },
-  },
+
+}
+
+
 });

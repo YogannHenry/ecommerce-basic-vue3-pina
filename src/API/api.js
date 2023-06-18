@@ -2,9 +2,9 @@ import Axios from "axios";
 
 const API_URL = "http://localhost:1337/api";
 
-export const getProducts = async () => {
+export const getProducts = async (params) => {
   try {
-    const response = await Axios.get(API_URL + '/products');
+    const response = await Axios.get(API_URL + '/products', { params });
     return response;
   } catch (error) {
     console.error("error", error);

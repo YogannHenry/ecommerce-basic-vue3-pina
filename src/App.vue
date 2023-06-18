@@ -15,9 +15,7 @@ import { useShoppingStore } from './stores'
 const store = useShoppingStore();
 
     onMounted(async () => {
-      await store.loadProducts();
-      await store.loadReviews()
-    
+      await store.loadProducts();    
     })
 
 
